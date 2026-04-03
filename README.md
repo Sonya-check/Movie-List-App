@@ -1,16 +1,78 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎬 Movie List App
 
-Currently, two official plugins are available:
+Небольшое веб-приложение на React для управления списком фильмов.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Описание
 
-## React Compiler
+Приложение позволяет:
+	•	добавлять фильмы
+	•	редактировать их
+	•	удалять
+	•	отмечать как просмотренные
+	•	искать по названию
+	•	фильтровать список
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Проект реализован в рамках учебного задания по React.
 
-## Expanding the ESLint configuration
+⸻
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Используемые технологии
+	•	React (hooks: useState)
+	•	JavaScript (ES6+)
+	•	Vite
+	•	CSS
+
+⸻
+
+Структура проекта
+
+src/
+├─ components/
+│  ├─ MovieForm.jsx
+│  ├─ MovieList.jsx
+│  ├─ MovieItem.jsx
+│  ├─ SearchBar.jsx
+│  └─ FilterButtons.jsx
+├─ App.jsx
+├─ main.jsx
+
+
+⸻
+
+Установка и запуск
+
+Склонируйте репозиторий и установите зависимости:
+
+npm install
+
+Запуск проекта:
+
+npm run dev
+
+После запуска откройте ссылку в браузере (обычно http://localhost:5173)
+
+⸻
+
+Функционал
+	•	Добавление фильма
+	•	Редактирование названия
+	•	Удаление
+	•	Отметка “просмотрен”
+	•	Поиск по названию
+	•	Фильтрация:
+	•	все
+	•	просмотренные
+	•	не просмотренные
+
+⸻
+
+Реализованные концепции React
+	•	Компонентный подход
+	•	Props (передача данных между компонентами)
+	•	State (useState)
+	•	Обработка событий (onClick, onChange)
+	•	Работа со списками (map)
+	•	Использование key
+	•	Условный рендеринг
+
