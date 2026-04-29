@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom' 
 
 function MovieItem({ movie, onDelete, onToggleWatched, onEdit }) {
   const [isEditing, setIsEditing] = useState(false)
@@ -29,6 +30,14 @@ function MovieItem({ movie, onDelete, onToggleWatched, onEdit }) {
           <h3>{movie.title}</h3>
           <p>Жанр: {movie.genre}</p>
           <p>{movie.watched ? 'Просмотрен' : 'Не просмотрен'}</p>
+          
+          {/* ДОБАВЛЯЕМ ССЫЛКУ "ПОДРОБНЕЕ" ДЛЯ РОУТИНГА */}
+          <Link 
+            to={`/movie/${movie.id}`} 
+            style={{ color: '#007bff', fontSize: '0.9rem', textDecoration: 'underline' }}
+          >
+            Подробнее о фильме
+          </Link>
         </div>
       )}
 
